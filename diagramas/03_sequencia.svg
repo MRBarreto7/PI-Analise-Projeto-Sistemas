@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1110" height="1050" viewBox="0 0 1110 1050">
+<rect width="100%" height="100%" fill="white"/>
+<style>text{font-family:DejaVu Sans,Arial,sans-serif;fill:#182c3e}.p{font-size:16px;font-weight:bold}.msg{font-size:13px}.note{font-size:13px}.label{font-size:13px;font-weight:bold}.head{font-size:22px;font-weight:bold}</style>
+<text x="555" y="32" text-anchor="middle" class="head">Diagrama de Sequência UML — Entrega e Avaliação de TCC</text>
+<rect x="5" y="55" width="170" height="48" fill="#e8f2fa" stroke="#305d79" rx="4"/>
+<text x="90" y="84" text-anchor="middle" class="p">Aluno</text>
+<line x1="90" y1="103" x2="90" y2="1000" stroke="#64748b" stroke-dasharray="6,6" stroke-width="1.5"/>
+<rect x="215" y="55" width="170" height="48" fill="#e8f2fa" stroke="#305d79" rx="4"/>
+<text x="300" y="84" text-anchor="middle" class="p">Interface</text>
+<line x1="300" y1="103" x2="300" y2="1000" stroke="#64748b" stroke-dasharray="6,6" stroke-width="1.5"/>
+<rect x="445" y="55" width="170" height="48" fill="#e8f2fa" stroke="#305d79" rx="4"/>
+<text x="530" y="84" text-anchor="middle" class="p">Serviço de Entregas</text>
+<line x1="530" y1="103" x2="530" y2="1000" stroke="#64748b" stroke-dasharray="6,6" stroke-width="1.5"/>
+<rect x="695" y="55" width="170" height="48" fill="#e8f2fa" stroke="#305d79" rx="4"/>
+<text x="780" y="84" text-anchor="middle" class="p">Banco de Dados</text>
+<line x1="780" y1="103" x2="780" y2="1000" stroke="#64748b" stroke-dasharray="6,6" stroke-width="1.5"/>
+<rect x="915" y="55" width="170" height="48" fill="#e8f2fa" stroke="#305d79" rx="4"/>
+<text x="1000" y="84" text-anchor="middle" class="p">Avaliador</text>
+<line x1="1000" y1="103" x2="1000" y2="1000" stroke="#64748b" stroke-dasharray="6,6" stroke-width="1.5"/>
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="#2f5068"/></marker><marker id="arrow2" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="#64748b"/></marker></defs>
+<rect x="294" y="150" width="12" height="310" fill="#d8e9f5" stroke="#39617c"/>
+<rect x="524" y="206" width="12" height="250" fill="#d8e9f5" stroke="#39617c"/>
+<rect x="774" y="283" width="12" height="95" fill="#d8e9f5" stroke="#39617c"/>
+<rect x="294" y="565" width="12" height="330" fill="#d8e9f5" stroke="#39617c"/>
+<rect x="524" y="625" width="12" height="270" fill="#d8e9f5" stroke="#39617c"/>
+<rect x="774" y="744" width="12" height="105" fill="#d8e9f5" stroke="#39617c"/>
+<line x1="90" y1="147" x2="300" y2="147" stroke="#2f5068" stroke-width="1.7"  marker-end="url(#arrow)"/>
+<text x="195.0" y="139" text-anchor="middle" class="msg">1. Enviar material da etapa</text>
+<line x1="300" y1="205" x2="530" y2="205" stroke="#2f5068" stroke-width="1.7"  marker-end="url(#arrow)"/>
+<text x="415.0" y="197" text-anchor="middle" class="msg">2. registrarEntrega(etapa, arquivo/link)</text>
+<rect x="225" y="232" width="650" height="238" fill="none" stroke="#8899a6" stroke-width="1.4"/>
+<rect x="225" y="232" width="98" height="24" fill="#e8f2fa" stroke="#8899a6"/><text x="237" y="249" class="label">alt</text>
+<text x="335" y="249" class="note">[dados e permissão válidos]</text>
+<line x1="530" y1="282" x2="780" y2="282" stroke="#2f5068" stroke-width="1.7"  marker-end="url(#arrow)"/>
+<text x="655.0" y="274" text-anchor="middle" class="msg">3. salvarEntrega(versão, data/hora)</text>
+<line x1="780" y1="326" x2="530" y2="326" stroke="#64748b" stroke-width="1.7" stroke-dasharray="6,4" marker-end="url(#arrow2)"/>
+<text x="655.0" y="318" text-anchor="middle" class="msg">4. entrega gravada</text>
+<line x1="530" y1="368" x2="300" y2="368" stroke="#64748b" stroke-width="1.7" stroke-dasharray="6,4" marker-end="url(#arrow2)"/>
+<text x="415.0" y="360" text-anchor="middle" class="msg">5. confirmação e status</text>
+<line x1="225" y1="392" x2="875" y2="392" stroke="#8899a6" stroke-dasharray="5,4"/><text x="238" y="410" class="note">[arquivo/link inválido ou sem acesso]</text>
+<line x1="530" y1="439" x2="300" y2="439" stroke="#64748b" stroke-width="1.7" stroke-dasharray="6,4" marker-end="url(#arrow2)"/>
+<text x="415.0" y="431" text-anchor="middle" class="msg">5a. mensagem de erro</text>
+<line x1="300" y1="490" x2="90" y2="490" stroke="#64748b" stroke-width="1.7" stroke-dasharray="6,4" marker-end="url(#arrow2)"/>
+<text x="195.0" y="482" text-anchor="middle" class="msg">6. exibir resultado</text>
+<line x1="1000" y1="564" x2="300" y2="564" stroke="#2f5068" stroke-width="1.7"  marker-end="url(#arrow)"/>
+<text x="650.0" y="556" text-anchor="middle" class="msg">7. Consultar entregas pendentes</text>
+<line x1="300" y1="625" x2="530" y2="625" stroke="#2f5068" stroke-width="1.7"  marker-end="url(#arrow)"/>
+<text x="415.0" y="617" text-anchor="middle" class="msg">8. listarEntregasAutorizadas()</text>
+<line x1="530" y1="682" x2="780" y2="682" stroke="#2f5068" stroke-width="1.7"  marker-end="url(#arrow)"/>
+<text x="655.0" y="674" text-anchor="middle" class="msg">9. buscarEntregas()</text>
+<line x1="780" y1="719" x2="530" y2="719" stroke="#64748b" stroke-width="1.7" stroke-dasharray="6,4" marker-end="url(#arrow2)"/>
+<text x="655.0" y="711" text-anchor="middle" class="msg">10. dados da entrega</text>
+<line x1="530" y1="765" x2="300" y2="765" stroke="#64748b" stroke-width="1.7" stroke-dasharray="6,4" marker-end="url(#arrow2)"/>
+<text x="415.0" y="757" text-anchor="middle" class="msg">11. entregas disponíveis</text>
+<line x1="300" y1="810" x2="1000" y2="810" stroke="#64748b" stroke-width="1.7" stroke-dasharray="6,4" marker-end="url(#arrow2)"/>
+<text x="650.0" y="802" text-anchor="middle" class="msg">12. exibir entrega</text>
+<line x1="1000" y1="858" x2="300" y2="858" stroke="#2f5068" stroke-width="1.7"  marker-end="url(#arrow)"/>
+<text x="650.0" y="850" text-anchor="middle" class="msg">13. Informar nota e feedback</text>
+<line x1="300" y1="902" x2="530" y2="902" stroke="#2f5068" stroke-width="1.7"  marker-end="url(#arrow)"/>
+<text x="415.0" y="894" text-anchor="middle" class="msg">14. registrarAvaliação(nota, feedback)</text>
+<rect x="335" y="930" width="700" height="60" fill="#f2f7fa" stroke="#95a8b7" rx="4"/>
+<text x="349" y="951" class="note">[nota de 0 a 10 e avaliador autorizado]: salvar avaliação;</text>
+<text x="349" y="972" class="note">aprovar ou reabrir etapa; disponibilizar feedback ao aluno.</text>
+</svg>
