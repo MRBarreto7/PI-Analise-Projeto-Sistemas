@@ -1,0 +1,29 @@
+@startuml
+package "br.unisc.gestaotcc" {
+ package "web" as WEB
+ package "autenticacao" as AUT
+ package "usuarios" as USU
+ package "tcc" as TCC
+ package "etapas" as ETA
+ package "entregas" as ENT
+ package "orientacoes" as ORI
+ package "avaliacoes" as AVA
+ package "bancas" as BAN
+ package "persistencia" as PER
+}
+WEB ..> AUT
+WEB ..> USU
+WEB ..> TCC
+WEB ..> ETA
+WEB ..> ENT
+WEB ..> ORI
+WEB ..> AVA
+WEB ..> BAN
+USU ..> PER
+TCC ..> PER
+ETA ..> PER
+ENT ..> PER
+ORI ..> PER
+AVA ..> PER
+BAN ..> PER
+@enduml

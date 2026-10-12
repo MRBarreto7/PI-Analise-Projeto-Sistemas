@@ -1,0 +1,20 @@
+@startuml
+left to right direction
+node "Dispositivo do usuário" <<device>> as Client {
+  artifact "Navegador Web" as Browser
+}
+node "Hospedagem Web" <<server>> as WebHost {
+ artifact "Frontend (HTML/CSS/JS)" as Front
+}
+node "Servidor de Aplicação" <<server>> as AppHost {
+ artifact "API e módulos de negócio" as Back
+}
+node "Servidor de Dados" <<database>> as DbHost {
+ database "PostgreSQL" as PG
+}
+cloud "Armazenamento de arquivos" as ObjectStorage
+Client -- WebHost : HTTPS
+Client -- AppHost : HTTPS / JSON
+AppHost -- DbHost : TCP / SQL
+AppHost -- ObjectStorage : HTTPS
+@enduml

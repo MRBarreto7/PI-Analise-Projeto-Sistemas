@@ -1,0 +1,31 @@
+@startuml
+left to right direction
+skinparam componentStyle uml2
+actor "Aluno / Orientador / Coordenação / Banca" as User
+package "Sistema de Gestão de TCC" {
+  component "Interface Web" as Web
+  component "API HTTP / Autorização" as API
+  component "Gestão de Usuários" as Users
+  component "Gestão de TCC e Prazos" as TCC
+  component "Entregas e Versões" as Ent
+  component "Orientações e Avaliações" as Ava
+  component "Bancas e Defesa" as Ban
+  component "Persistência" as Repo
+}
+database "PostgreSQL" as DB
+cloud "Armazenamento de Arquivos" as Storage
+User --> Web : HTTPS
+Web --> API : REST / JSON
+API ..> Users : IUsuarios
+API ..> TCC : ITCC
+API ..> Ent : IEntregas
+API ..> Ava : IAvaliacoes
+API ..> Ban : IBancas
+Users ..> Repo
+TCC ..> Repo
+Ent ..> Repo
+Ava ..> Repo
+Ban ..> Repo
+Repo --> DB : SQL/TCP
+Ent --> Storage : HTTPS
+@enduml
