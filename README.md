@@ -1,7 +1,7 @@
 # Projeto Integrador — Sistema de Gestão de TCC
 
 **Análise e Projeto de Sistemas — UNISC — 2026/2**  
-**Integrantes:** Diogo Alex Marquardt, Wilhelm Niemeyer Bock, Bruno Comassetto e Matheus Rocha Barreto.
+**Integrantes:** Wilhelm Niemeyer Bock, Bruno Comassetto e Matheus Rocha Barreto.
 
 O projeto propõe um sistema para acompanhar o processo de TCC, desde o cadastro e definição de prazos até as entregas, avaliações e defesa. Esta entrega reúne as especificações anteriores disponíveis e a documentação arquitetural da Parte 3.
 
@@ -23,6 +23,13 @@ O projeto propõe um sistema para acompanhar o processo de TCC, desde o cadastro
 - [Atividades](diagramas/04_atividades.png)
 
 As tecnologias e a infraestrutura descritas representam uma **proposta de arquitetura**, não um sistema já implementado.
+
+## Protótipo navegável
+
+Esboço das telas do sistema, com dados fictícios e sem servidor.
+
+- [Abrir o protótipo](https://mrbarreto7.github.io/PI-Analise-Projeto-Sistemas/site/)
+- [Contas de teste e limites](site/README.md)
 
 ## Materiais da Parte 1
 
